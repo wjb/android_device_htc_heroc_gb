@@ -1,0 +1,13 @@
+# Aliases for symbols, used by symbol_request().
+alias symbol:xfrm6_tunnel_alloc_spi xfrm6_tunnel
+alias symbol:xfrm6_tunnel_register tunnel6
+alias symbol:xfrm4_tunnel_register tunnel4
+alias symbol:ipcomp_init_state xfrm_ipcomp
+alias symbol:xfrm6_tunnel_spi_lookup xfrm6_tunnel
+alias symbol:xfrm6_tunnel_deregister tunnel6
+alias symbol:xfrm4_tunnel_deregister tunnel4
+alias symbol:xfrm6_tunnel_free_spi xfrm6_tunnel
+alias symbol:ipcomp_destroy xfrm_ipcomp
+alias symbol:ipcomp_input xfrm_ipcomp
+alias symbol:ipcomp_output xfrm_ipcomp
+alias symbol:crc32c libcrc32c
