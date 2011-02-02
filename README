@@ -3,11 +3,11 @@ Basic steps to build:
 1 - Get local copy of CM7 respository
 2 - Get copy of the device tree into device/htc/heroc
 3 - Copy modified files from 'device/htc/heroc/buildmods' to proper directories:
-        a) definitions.mk into 'build/core' (Temporary fix for boot.img size issue)
+        a) definitions.mk.heroc to 'build/core/definitions.mk' (Temporary fix for boot.img size issue)
         b) vendorsetup.sh into 'vendor/cyanogen' (Add lunch combo)
         c) prelink-linux-arm-heroc.map into 'vendor/cyanogen' (Map library locations)
-        d) AndroidProducts.mk into 'vendor/cyanogen/products' (Add cyanogen_heroc product)
-        e) cyanogen_heroc.mk into 'vendor/cyanogen/products' (Add cyanogen_heroc makefile)
+        d) AndroidProducts.mk.heroc to 'vendor/cyanogen/products/AndroidProducts.mk' (Add cyanogen_heroc product)
+        e) cyanogen_heroc.mk.heroc to 'vendor/cyanogen/products/cyanogen_heroc.mk' (Add cyanogen_heroc makefile)
 4 - Run get-rommanager in vendor/cyanogen directory
 5 - Get proprietary files into 'vendor/htc/heroc/proprietary'
         a) Put ROM (update.zip) in repo root and run 'unzip-files.sh' from the 'device/htc/heroc' directory
