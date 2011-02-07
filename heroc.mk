@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product-if-exists, vendor/htc/heroc/device_heroc-vendor.mk)
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/htc/heroc/kernel
+LOCAL_KERNEL := device/htc/heroc/prebuilt/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -40,7 +40,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.dexopt-flags=m=y
 
 PRODUCT_COPY_FILES += \
-    device/htc/heroc/prebuilt/init.heroc.rc:root/init.heroc.rc
+    device/htc/heroc/prebuilt/init.heroc.rc:root/init.heroc.rc \
+    device/htc/heroc/prebuilt/ueventd.heroc.rc:root/ueventd.heroc.rc
 
 PRODUCT_COPY_FILES += \
     device/htc/heroc/prebuilt/30cpumem:system/etc/init.d/30cpumem

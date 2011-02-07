@@ -69,7 +69,7 @@ BOARD_VENDOR_QCOM_AMSS_VERSION := 6355
 
 BOARD_USES_QCOM_HARDWARE := true
 
-BOARD_HAS_LIMITED_EGL := true
+# BOARD_HAS_LIMITED_EGL := true
 
 TARGET_HARDWARE_3D := false
 
@@ -100,6 +100,8 @@ TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 
 BOARD_NO_RGBX_8888 := true
 
+# WITH_DEXPREOPT := true
+
 JS_ENGINE := v8
 
 # Stagefright fully enabled
@@ -127,4 +129,4 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x0a5c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_heroc librecovery_ui_htc
-TARGET_PREBUILT_KERNEL := device/htc/heroc/kernel
+TARGET_PREBUILT_KERNEL := device/htc/heroc/prebuilt/kernel
