@@ -19,39 +19,34 @@ DEVICE=heroc
 mkdir -p ../../../vendor/htc/$DEVICE/proprietary
 
 unzip -j -o ../../../${DEVICE}_update.zip -d ../../../vendor/htc/$DEVICE/proprietary \
-	 system/bin/akmd \
-	 system/etc/01_qcomm_omx.cfg \
-	 system/etc/AudioFilter.csv \
-	 system/etc/AudioPara4.csv \
-	 system/etc/AudioPreProcess.csv \
-         system/etc/firmware/avpr.bts \
-     	 system/etc/firmware/brf6300.bin \
-     	 system/etc/firmware/brf6350.bin \
-     	 system/etc/firmware/fmc_init_1273.2.bts \
-     	 system/etc/firmware/fm_rx_init_1273.2.bts \
-     	 system/etc/firmware/tiinit_5.3.53.bts \
-     	 system/etc/firmware/vac_config.ini \
-     	 system/etc/wifi/Fw1251r1c.bin \
-	 system/lib/egl/libGLES_qcom.so \
-	 system/lib/libhardware_legacy.so \
-	 system/lib/libaudioeq.so \
-	 system/lib/libcamera.so \
-	 system/lib/libgps.so \
-	 system/lib/libhtc_acoustic.so \
-	 system/lib/libhtc_ril.so \
-	 system/lib/libmm-adspsvc.so \
-	 system/lib/liboemcamera.so \
-	 system/lib/libOmxCore.so \
-	 system/lib/libOmxH264Dec.so \
-	 system/lib/libOmxMpeg4Dec.so \
-	 system/lib/libOmxVidEnc.so \
-	 system/lib/hw/lights.msm7k.so \
-		system/lib/libomx_wmadec_sharedlibrary.so \
-		system/lib/libomx_wmvdec_sharedlibrary.so \
-		system/lib/libpvasfcommon.so \
-		system/lib/libpvasflocalpbreg.so \
-		system/lib/libpvasflocalpb.so \
-		system/etc/pvasflocal.cfg
+	system/bin/akmd \
+	system/etc/01_qcomm_omx.cfg \
+	system/etc/AudioFilter.csv \
+	system/etc/AudioPara4.csv \
+	system/etc/AudioPreProcess.csv \
+	system/etc/firmware/brf6350.bin \
+	system/etc/wifi/Fw1251r1c.bin \
+	system/lib/egl/libGLES_qcom.so \
+	system/lib/libhardware_legacy.so \
+	system/lib/libaudioeq.so \
+	system/lib/libcamera.so \
+	system/lib/libgps.so \
+	system/lib/libhtc_acoustic.so \
+	system/lib/libhtc_ril.so \
+	system/lib/libmm-adspsvc.so \
+	system/lib/liboemcamera.so \
+	system/lib/libOmxCore.so \
+	system/lib/libOmxH264Dec.so \
+	system/lib/libOmxMpeg4Dec.so \
+	system/lib/libOmxVidEnc.so \
+	system/lib/hw/lights.msm7k.so \
+	system/lib/libomx_wmadec_sharedlibrary.so \
+	system/lib/libomx_wmvdec_sharedlibrary.so \
+	system/lib/libpvasfcommon.so \
+	system/lib/libpvasflocalpbreg.so \
+	system/lib/libpvasflocalpb.so \
+	system/lib/libspeech.so \
+	system/etc/pvasflocal.cfg
 	 
 chmod 755 ../../../vendor/htc/$DEVICE/proprietary/akmd
 

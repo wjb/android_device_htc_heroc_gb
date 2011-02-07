@@ -45,6 +45,7 @@ adb pull /system/lib/libomx_wmvdec_sharedlibrary.so ../../../vendor/htc/$DEVICE/
 adb pull /system/lib/libpvasfcommon.so ../../../vendor/htc/$DEVICE/proprietary/libpvasfcommon.so
 adb pull /system/lib/libpvasflocalpbreg.so ../../../vendor/htc/$DEVICE/proprietary/libpvasflocalpbreg.so
 adb pull /system/lib/libpvasflocalpb.so ../../../vendor/htc/$DEVICE/proprietary/libpvasflocalpb.so
+adb pull /system/lib/libspeech.so ../../../vendor/htc/$DEVICE/proprietary/libspeech.so
 
 chmod 755 ../../../vendor/htc/$DEVICE/proprietary/akmd
 
