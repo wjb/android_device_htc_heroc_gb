@@ -36,8 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.cdma.home.operator.alpha=Sprint \
 	ro.setupwizard.enable_bypass=1 \
 	ro.media.dec.jpeg.memcap=20000000 \
-	dalvik.vm.lockprof.threshold=500 \
-	dalvik.vm.dexopt-flags=m=y
+	dalvik.vm.lockprof.threshold=500
 
 PRODUCT_COPY_FILES += \
     device/htc/heroc/prebuilt/init.heroc.rc:root/init.heroc.rc \
@@ -85,6 +84,7 @@ PRODUCT_PACKAGES += \
     heroc-keypad.kcm \
     sensors.heroc \
     lights.heroc \
+    lights.msm7k \
     gralloc.msm7k \
     copybit.msm7k \
     gps.heroc \
@@ -101,6 +101,9 @@ PRODUCT_PACKAGES += \
 
 # HeroC uses mdpi artwork where available
 PRODUCT_LOCALES += mdpi
+
+# Install HeroC kernel modules
+$(call inherit-product, device/htc/heroc/heroc-modules.mk)
 
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
