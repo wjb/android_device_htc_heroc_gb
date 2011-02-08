@@ -35,10 +35,8 @@ unzip -j -o ../../../${DEVICE}_update.zip -d ../../../vendor/htc/$DEVICE/proprie
 	system/lib/libhtc_ril.so \
 	system/lib/libmm-adspsvc.so \
 	system/lib/liboemcamera.so \
-	system/lib/libOmxCore.so \
 	system/lib/libOmxH264Dec.so \
 	system/lib/libOmxMpeg4Dec.so \
-	system/lib/libOmxVidEnc.so \
 	system/lib/libspeech.so
 	 
 chmod 755 ../../../vendor/htc/$DEVICE/proprietary/akmd
