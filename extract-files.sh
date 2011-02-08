@@ -26,9 +26,7 @@ adb pull /system/etc/AudioPara4.csv ../../../vendor/htc/$DEVICE/proprietary/Audi
 adb pull /system/etc/AudioPreProcess.csv ../../../vendor/htc/$DEVICE/proprietary/AudioPreProcess.csv
 adb pull /system/etc/firmware/brf6350.bin ../../../vendor/htc/$DEVICE/proprietary/brf6350.bin
 adb pull /system/etc/wifi/Fw1251r1c.bin ../../../vendor/htc/$DEVICE/proprietary/Fw1251r1c.bin
-adb pull /system/etc/pvasflocal.cfg ../../../vendor/htc/$DEVICE/proprietary/pvasflocal.cfg
 adb pull /system/lib/egl/libGLES_qcom.so ../../../vendor/htc/$DEVICE/proprietary/libGLES_qcom.so
-adb pull /system/lib/hw/lights.msm7k.so ../../../vendor/htc/$DEVICE/proprietary/lights.msm7k.so
 adb pull /system/lib/libaudioeq.so ../../../vendor/htc/$DEVICE/proprietary/libaudioeq.so
 adb pull /system/lib/libcamera.so ../../../vendor/htc/$DEVICE/proprietary/libcamera.so
 adb pull /system/lib/libgps.so ../../../vendor/htc/$DEVICE/proprietary/libgps.so
@@ -40,11 +38,6 @@ adb pull /system/lib/libOmxCore.so ../../../vendor/htc/$DEVICE/proprietary/libOm
 adb pull /system/lib/libOmxH264Dec.so ../../../vendor/htc/$DEVICE/proprietary/libOmxH264Dec.so
 adb pull /system/lib/libOmxMpeg4Dec.so ../../../vendor/htc/$DEVICE/proprietary/libOmxMpeg4Dec.so
 adb pull /system/lib/libOmxVidEnc.so ../../../vendor/htc/$DEVICE/proprietary/libOmxVidEnc.so
-adb pull /system/lib/libomx_wmadec_sharedlibrary.so ../../../vendor/htc/$DEVICE/proprietary/libomx_wmadec_sharedlibrary.so
-adb pull /system/lib/libomx_wmvdec_sharedlibrary.so ../../../vendor/htc/$DEVICE/proprietary/libomx_wmvdec_sharedlibrary.so
-adb pull /system/lib/libpvasfcommon.so ../../../vendor/htc/$DEVICE/proprietary/libpvasfcommon.so
-adb pull /system/lib/libpvasflocalpbreg.so ../../../vendor/htc/$DEVICE/proprietary/libpvasflocalpbreg.so
-adb pull /system/lib/libpvasflocalpb.so ../../../vendor/htc/$DEVICE/proprietary/libpvasflocalpb.so
 adb pull /system/lib/libspeech.so ../../../vendor/htc/$DEVICE/proprietary/libspeech.so
 
 chmod 755 ../../../vendor/htc/$DEVICE/proprietary/akmd
