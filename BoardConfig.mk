@@ -89,7 +89,7 @@ BOARD_USES_QCOM_LIBS := true
 
 #TARGET_HAS_ANCIENT_MSMCAMERA := true
 BUILD_LIBCAMERA := true
-BOARD_CAMERA_LIBRARIES := libcameraservice libcamera
+
 USE_CAMERA_STUB:= false
 
 BOARD_USES_GPSSHIM := true

@@ -84,7 +84,6 @@ PRODUCT_PACKAGES += \
     heroc-keypad.kcm \
     sensors.heroc \
     lights.heroc \
-    lights.msm7k \
     gralloc.msm7k \
     copybit.msm7k \
     gps.heroc \
