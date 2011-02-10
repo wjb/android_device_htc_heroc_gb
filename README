@@ -2,18 +2,12 @@ Basic steps to build:
 
 1 - Get local copy of CM7 respository
 2 - Get copy of the device tree into device/htc/heroc
-3 - Copy modified files from 'device/htc/heroc/buildmods' to proper directories:
-        a) definitions.mk.heroc to 'build/core/definitions.mk' (Temporary fix for boot.img size issue)
-        b) vendorsetup.sh into 'vendor/cyanogen' (Add lunch combo)
-        c) prelink-linux-arm-heroc.map into 'vendor/cyanogen' (Map library locations)
-        d) AndroidProducts.mk.heroc to 'vendor/cyanogen/products/AndroidProducts.mk' (Add cyanogen_heroc product)
-        e) cyanogen_heroc.mk.heroc to 'vendor/cyanogen/products/cyanogen_heroc.mk' (Add cyanogen_heroc makefile)
-4 - Run get-rommanager in vendor/cyanogen directory
-5 - Get proprietary files into 'vendor/htc/heroc/proprietary'
+3 - Run get-rommanager in vendor/cyanogen directory
+4 - Get proprietary files into 'vendor/htc/heroc/proprietary'
         a) Put ROM (update.zip) in repo root and run 'unzip-files.sh' from the 'device/htc/heroc' directory
         b) Use 'adb' to pull files from usb connected device by running 'extract-files.sh'
         c) Copy files from expanded system directory on your local machine by running 'copy-files.sh'
         d) Copy files from 'device/htc/heroc/proprietary' directory (also needs 'setup-makefiles.sh')
-6 - Setup build environment by sourcing envsetup file '. build/envsetup.sh'
-7 - Run Lunch to select the build target 'lunch cyanogen_heroc-eng'
-8 - Build the system with make, mka, etc.
+5 - Setup build environment by sourcing envsetup file '. build/envsetup.sh'
+6 - Run Lunch to select the build target 'lunch cyanogen_heroc-eng'
+7 - Build the system with make, mka, etc.
