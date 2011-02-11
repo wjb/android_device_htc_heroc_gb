@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),heroc)
-
 LOCAL_PATH:= $(call my-dir)
+
+ifneq ($(TARGET_SIMULATOR),true)
 
 include $(CLEAR_VARS)
 
@@ -30,4 +30,4 @@ LOCAL_PRELINK_MODULE := false
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif
+endif # !TARGET_SIMULATOR
