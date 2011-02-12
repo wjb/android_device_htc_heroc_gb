@@ -3,6 +3,7 @@ alias ip6t_TCPMSS xt_TCPMSS
 alias ipt_TCPMSS xt_TCPMSS
 alias ip6t_hashlimit xt_hashlimit
 alias ipt_hashlimit xt_hashlimit
+alias net-pf-10 ipv6
 alias xfrm-type-10-51 ah6
 alias xfrm-type-10-50 esp6
 alias xfrm-type-10-108 ipcomp6
