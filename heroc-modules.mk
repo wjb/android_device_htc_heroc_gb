@@ -20,16 +20,15 @@ SRC := $(MOD_SRC)/$(KERNEL_VER)/kernel
 DST := $(MOD_DST)/$(KERNEL_VER)/kernel
 
 PRODUCT_COPY_FILES += \
-    $(SRC)/crypto/crc32c.ko:$(DST)/crypto/crc32c.ko \
     $(SRC)/crypto/deflate.ko:$(DST)/crypto/deflate.ko \
     $(SRC)/drivers/hid/hid-dummy.ko:$(DST)/drivers/hid/hid-dummy.ko \
-    $(SRC)/fs/cifs/cifs.ko:$(DST)/fs/cifs/cifs.ko \
-    $(SRC)/lib/libcrc32c.ko:$(DST)/lib/libcrc32c.ko \
+    $(SRC)/drivers/staging/ramzswap/ramzswap.ko:$(DST)/drivers/staging/ramzswap/ramzswap.ko \
     $(SRC)/net/ipv4/tunnel4.ko:$(DST)/net/ipv4/tunnel4.ko \
     $(SRC)/net/ipv6/ah6.ko:$(DST)/net/ipv6/ah6.ko \
     $(SRC)/net/ipv6/esp6.ko:$(DST)/net/ipv6/esp6.ko \
     $(SRC)/net/ipv6/ip6_tunnel.ko:$(DST)/net/ipv6/ip6_tunnel.ko \
     $(SRC)/net/ipv6/ipcomp6.ko:$(DST)/net/ipv6/ipcomp6.ko \
+    $(SRC)/net/ipv6/ipv6.ko:$(DST)/net/ipv6/ipv6.ko \
     $(SRC)/net/ipv6/mip6.ko:$(DST)/net/ipv6/mip6.ko \
     $(SRC)/net/ipv6/sit.ko:$(DST)/net/ipv6/sit.ko \
     $(SRC)/net/ipv6/tunnel6.ko:$(DST)/net/ipv6/tunnel6.ko \
