@@ -81,7 +81,6 @@ PRODUCT_COPY_FILES += \
 # Product Packages
 PRODUCT_PACKAGES += \
     librs_jni \
-    heroc-keypad.kcm \
     sensors.heroc \
     lights.heroc \
     lights.msm7k \
