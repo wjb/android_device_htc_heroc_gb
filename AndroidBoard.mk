@@ -19,8 +19,8 @@ $(call add-radio-file,recovery/images/firmware_error.565)
 $(call add-radio-file,recovery/images/bitmap_size.txt)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := prebuilt/heroc-keypad.kcm
+LOCAL_MODULE_TAGS := eng
+LOCAL_SRC_FILES := heroc-keypad.kcm
 include $(BUILD_KEY_CHAR_MAP)
         
 -include vendor/htc/heroc/AndroidBoardVendor.mk#
